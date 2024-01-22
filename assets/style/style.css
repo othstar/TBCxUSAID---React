@@ -1,59 +1,276 @@
+/* General Styles */
 body {
   font-size: 16px;
   background-color: var(--bg-overlay-color);
 }
+.container {
+  max-width: 100%;
+  width: 1010px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+
+/* Header Styles */
 header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(26, 30, 31);
-  font-size: 0.98rem;
-  padding: 0.72em;
+  width: 100%;
+  height: 85px;
+  background-color: var(--bg-header-footer);
   position: sticky;
   top: 0;
-  transition: background-color 0.5s ease;
+  transition: all 0.5s ease;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+}
+header nav {
+  max-width: 100%;
+  width: 440px;
 }
 
 header nav ul {
   display: flex;
-  gap: 3rem;
-  list-style: none;
+  justify-content: space-between;
   width: 100%;
 }
 
 header nav a {
-  text-decoration: none;
   color: white;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+/* Section 1 Styles */
 .section-1 {
   display: flex;
   flex-direction: column;
   color: white;
-  font-family: var(--font_3);
 }
+
 .section-1 .section-1-header {
   padding: 6em 28em;
   background-image: url(../image/background-pic.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  font-family: var(--primary-font);
 }
 
 .section-1 h1 {
   font-size: 42px;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.6em;
 }
+
 .section-1 .description {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  background-color: rgb(43, 43, 43);
+  padding: 4rem 0;
+  background-color: var(--bg-overlay-color);
   font-size: 33px;
-  padding: 4rem 28rem;
   line-height: 1.4em;
 }
+.section-1 .description p {
+  margin-bottom: 2rem;
+}
 .section-1 .description a {
-  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.section-1 .description a:hover {
+  color: gray;
+}
+
+/* Main Section Styles */
+.main-section {
+  padding: 2em 0;
+  background-color: var(--bg-overlay1-color);
+}
+
+.main-section .main-header h2 {
+  padding-bottom: 2em;
+  color: white;
+  font-size: 24px;
+}
+
+.main-section .cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.main-section .cards-container .card {
+  max-width: 300px;
+  width: 100%;
+  height: 414px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+}
+
+.main-section .cards-container .card .card-info {
+  padding-left: 1em;
+}
+
+.main-section .cards-container .card .card-info h3 {
+  margin: 2em 0;
+  font-size: 18px;
+}
+
+.main-section .cards-container .card .card-info span {
+  font-size: 16px;
+}
+.main-section .cards-container .card .card-info a {
+  display: inline-block;
+  color: var(--main-color);
+  font-size: 18px;
+  margin-top: 7rem;
+  transition: all 0.5s ease;
+}
+
+.main-section .cards-container .card .card-info a:hover {
+  color: var(--main-hover-color);
+}
+
+.main-section .cards-container .card .card-img img {
+  max-width: 300px;
+  width: 100%;
+}
+/* Slider Container Styles */
+.slider-container {
+}
+
+.slider-container .slider-header h3 {
+  color: white;
+  font-size: 24px;
+}
+
+/* Questions Section Styles */
+.questions-section {
+  padding: 2em 28em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-overlay1-color);
+}
+
+.questions-section .questions-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding-bottom: 1.5em;
+}
+
+.questions-section .questions-header h4 {
+  color: white;
+}
+
+.questions-section .questions-header a {
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.questions-section .questions-header a:hover {
+  color: gray;
+}
+
+.questions-section .questions {
+  font-size: 20px;
+}
+
+.questions-section .questions p {
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(67, 67, 67);
+}
+
+.questions-section .questions .question-content {
+  color: white;
+  font-size: 16px;
+}
+
+.questions-section .questions .question-content h4 {
+  margin: 2rem 0.2rem;
+}
+
+.questions-section .questions .question-content p {
+  margin: 1rem 2rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.questions-section .questions .question-content span {
+  font-weight: 900;
+}
+
+.questions-section .questions .question-content .add-info {
+  margin: 2rem 0.2rem;
+}
+.questions-section .questions .question-content .description {
+  margin: 0 0.2rem;
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: var(--bg-header-footer);
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+footer .container .left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  color: white;
+}
+
+footer .container .left-container img {
+  width: 120px;
+}
+
+footer .container .right-container {
+  color: white;
+}
+
+footer .container .right-container .icons-container {
+  padding-left: 4em;
+}
+
+footer .container .right-container button {
+  width: 10rem;
+  padding: 0.5rem;
+  margin-top: 2.5rem;
+  font-size: 18px;
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+footer .container .right-container button:hover {
+  background-color: white;
+}
+
+footer .container .right-container button a {
+  color: white;
+  transition: all 0.5s ease;
+}
+
+footer .container .right-container button a:hover {
+  color: black;
 }
