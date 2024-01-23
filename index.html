@@ -12,6 +12,7 @@
       href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
       rel="stylesheet"
     />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <header>
@@ -26,7 +27,7 @@
             <ul>
               <li><a href="">მთავარი</a></li>
               <li><a href="">TBC IT</a></li>
-              <li><a href="">TBC x USAID</a></li>
+              <li class="active"><a href="">TBC x USAID</a></li>
               <li><a href="">რისკები</a></li>
             </ul>
           </nav>
@@ -157,8 +158,11 @@
         <a href="#">ყველა კითხვა</a>
       </div>
       <div class="questions">
-        <p>როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?</p>
-        <div class="question-content">
+        <div class="question">
+          <p>როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?</p>
+          <span>></span>
+        </div>
+        <div class="question-content hidden">
           <h4>კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:</h4>
           <p>
             <span>I ეტაპი - </span>პირველ ეტაპზე საჭიროა, შეავსო სასურველი
@@ -192,8 +196,11 @@
             თუ არა კურსს დასწრების წინაპირობა.
           </p>
         </div>
-        <p>შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?</p>
-        <div class="question-content">
+        <div class="question">
+          <p>შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?</p>
+          <span>></span>
+        </div>
+        <div class="question-content hidden">
           <p class="description">
             TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში თითოეულ კანდიდატს
             აქვს მხოლოდ ერთი კურსის გავლის შესაძლებლობა. გარდა Information
@@ -201,8 +208,11 @@
             შესაძლებელია სწავლის გაგრძელება Advance დონეზე.
           </p>
         </div>
-        <p>რა ღირს სწავლა პროგრამის ფარგლებში?</p>
-        <div class="question-content">
+        <div class="question">
+          <p>რა ღირს სწავლა პროგრამის ფარგლებში?</p>
+          <span>></span>
+        </div>
+        <div class="question-content hidden">
           <p class="description">
             პროგრამის ფარგლებში კურსებზე სწავლა სრულიად დაფინანსებულია თიბისი
             ბანკისა და USAID-ის მიერ.
@@ -220,16 +230,16 @@
         <div class="right-container">
           <div class="icons-container">
             <a href="https://www.facebook.com/tbcbank/"
-              ><img src="./assets/image/fb.png" alt="facebook"
+              ><img src="./assets/image/fb.png" target="_blank" alt="facebook"
             /></a>
-            <a href="https://www.youtube.com/channel/UCGk9R2LV2ywOL80r8Xc6xtQ"
+            <a
+              href="https://www.youtube.com/channel/UCGk9R2LV2ywOL80r8Xc6xtQ"
+              target="_blank"
               ><img src="./assets/image/yt.png" alt="youtube"
             /></a>
           </div>
           <div class="btn-container">
-            <button>
-              <a href="mailto:itacademy@tbcbank.com.ge">მოგვწერეთ</a>
-            </button>
+            <a href="mailto:itacademy@tbcbank.com.ge">მოგვწერეთ</a>
           </div>
         </div>
       </div>

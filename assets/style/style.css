@@ -12,6 +12,10 @@ body {
   display: none;
 }
 
+.active a {
+  color: var(--main-color);
+}
+
 /* Header Styles */
 header {
   width: 100%;
@@ -34,7 +38,7 @@ header nav ul {
   width: 100%;
 }
 
-header nav a {
+header nav ul li a {
   color: white;
 }
 
@@ -186,11 +190,23 @@ header nav a {
   font-size: 20px;
 }
 
-.questions-section .questions p {
+.questions-section .questions .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(67, 67, 67);
+  cursor: pointer;
+}
+
+.questions-section .questions .question p {
   color: white;
   padding: 1rem 0;
   margin-bottom: 1rem;
-  border-bottom: 1px solid rgb(67, 67, 67);
+}
+
+.questions-section .questions .question span {
+  color: white;
+  transform: rotate(90deg);
 }
 
 .questions-section .questions .question-content {
@@ -250,27 +266,20 @@ footer .container .right-container .icons-container {
   padding-left: 4em;
 }
 
-footer .container .right-container button {
-  width: 10rem;
-  padding: 0.5rem;
+footer .container .right-container .btn-container a {
+  display: inline-block;
+  padding: 0.7rem 2.2rem;
   margin-top: 2.5rem;
   font-size: 18px;
   background-color: var(--main-color);
+  color: white;
   border: 1px solid transparent;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
-footer .container .right-container button:hover {
+footer .container .right-container .btn-container a:hover {
   background-color: white;
-}
-
-footer .container .right-container button a {
-  color: white;
-  transition: all 0.5s ease;
-}
-
-footer .container .right-container button a:hover {
   color: black;
 }
