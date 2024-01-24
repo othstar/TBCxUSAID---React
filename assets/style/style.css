@@ -8,12 +8,23 @@ body {
   width: 1010px;
   margin: 0 auto;
 }
+
+.min-container {
+  max-width: 100%;
+  width: 940px;
+  margin: 0 auto;
+}
+
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .active a {
   color: var(--main-color);
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(67, 67, 67);
 }
 
 /* Header Styles */
@@ -107,6 +118,7 @@ header nav ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .main-section .cards-container .card {
@@ -133,15 +145,21 @@ header nav ul li a {
 .main-section .cards-container .card .card-info span {
   font-size: 16px;
 }
-.main-section .cards-container .card .card-info a {
-  display: inline-block;
+
+.main-section .cards-container .card .card-info .details {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 7rem;
+}
+
+.main-section .cards-container .card .card-info .details a {
   color: var(--main-color);
   font-size: 18px;
-  margin-top: 7rem;
   transition: all 0.5s ease;
 }
 
-.main-section .cards-container .card .card-info a:hover {
+.main-section .cards-container .card .card-info .details a:hover {
   color: var(--main-hover-color);
 }
 
@@ -151,6 +169,33 @@ header nav ul li a {
 }
 /* Slider Container Styles */
 .slider-container {
+  padding: 2.5rem 2rem;
+}
+
+.slider-container .slider {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  padding: 5rem 3rem;
+}
+
+.slider-container .slider .left-arrow {
+  cursor: pointer;
+}
+
+.slider-container .slider .right-arrow {
+  cursor: pointer;
+}
+
+.slider-container .slider .slider-photo .photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-container .slider .slider-photo .photo {
+  width: 250px;
+  max-width: 100%;
 }
 
 .slider-container .slider-header h3 {
@@ -158,9 +203,24 @@ header nav ul li a {
   font-size: 24px;
 }
 
+.slider-container .dots {
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.slider-container .dots .dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /* Questions Section Styles */
 .questions-section {
-  padding: 2em 28em;
+  padding: 5em 0;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-overlay1-color);
@@ -194,7 +254,6 @@ header nav ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgb(67, 67, 67);
   cursor: pointer;
 }
 
@@ -204,9 +263,9 @@ header nav ul li a {
   margin-bottom: 1rem;
 }
 
-.questions-section .questions .question span {
+.questions-section .questions .question img {
+  width: 1rem;
   color: white;
-  transform: rotate(90deg);
 }
 
 .questions-section .questions .question-content {
@@ -232,7 +291,7 @@ header nav ul li a {
   margin: 2rem 0.2rem;
 }
 .questions-section .questions .question-content .description {
-  margin: 0 0.2rem;
+  margin: 0.5rem 0.2rem 2.5rem 0.2rem;
 }
 
 /* Footer Styles */
