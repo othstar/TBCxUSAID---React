@@ -1,0 +1,47 @@
+header {
+  width: 100%;
+  height: 85px;
+  background-color: var(--bg-header-footer);
+  position: sticky;
+  top: 0;
+  transition: all 0.5s ease;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  transition: background-color 0.5s;
+}
+header nav {
+  max-width: 100%;
+  width: 440px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul li {
+  transition: color 0.3s;
+}
+
+header nav ul li a {
+  color: white;
+  transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+  color: var(--main-color);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+/* Header color while scrolling */
+
+.header-transparent {
+  background-color: rgba(26, 30, 31, 0.95);
+}

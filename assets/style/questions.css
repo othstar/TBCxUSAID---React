@@ -1,0 +1,74 @@
+.questions-section {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-overlay1-color);
+}
+
+.questions-section .questions-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding-bottom: 1.5em;
+}
+
+.questions-section .questions-header h4 {
+  color: white;
+}
+
+.questions-section .questions-header a {
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.questions-section .questions-header a:hover {
+  color: gray;
+}
+
+.questions-section .questions {
+  font-size: 20px;
+}
+
+.questions-section .questions .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.questions-section .questions .question p {
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.questions-section .questions .question img {
+  width: 1rem;
+  color: white;
+}
+
+.questions-section .questions .question-content {
+  color: white;
+  font-size: 16px;
+}
+
+.questions-section .questions .question-content h4 {
+  margin: 2rem 0.2rem;
+}
+
+.questions-section .questions .question-content p {
+  margin: 1rem 2rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.questions-section .questions .question-content span {
+  font-weight: 900;
+}
+
+.questions-section .questions .question-content .add-info {
+  margin: 2rem 0.2rem;
+}
+.questions-section .questions .question-content .description {
+  margin: 0.5rem 0.2rem 2.5rem 0.2rem;
+}

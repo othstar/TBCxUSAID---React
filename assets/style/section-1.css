@@ -1,0 +1,40 @@
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.section-1 .section-1-header {
+  padding: 6em 28em;
+  background-image: url(../image/background-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  font-family: var(--primary-font);
+}
+
+.section-1 h1 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.6em;
+}
+
+.section-1 .description {
+  padding: 4rem 0;
+  background-color: var(--bg-overlay-color);
+  font-size: 33px;
+  line-height: 1.4em;
+}
+.section-1 .description p {
+  margin-bottom: 2rem;
+}
+.section-1 .description a {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.section-1 .description a:hover {
+  color: gray;
+}
