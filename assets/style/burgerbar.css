@@ -6,9 +6,11 @@
 
 .burger-bar .openbar {
   width: 40px;
+  cursor: pointer;
 }
 .burger-bar .closebar {
   width: 20px;
+  cursor: pointer;
 }
 
 .burger-div {
@@ -34,6 +36,11 @@
   color: white;
   margin-bottom: 30px;
   font-size: 18px;
+  transition: all 0.3s;
+}
+
+.burger-li ul li a:hover {
+  color: var(--main-color);
 }
 
 .overdiv {

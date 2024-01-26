@@ -147,18 +147,14 @@ const body = document.querySelector("body");
 const openDiv = document.querySelector(".openbar");
 const closeDiv = document.querySelector(".closebar");
 
-bar.addEventListener("click", function () {
+function closeModal() {
   burgerDiv.classList.toggle("hidden");
   overDiv.classList.toggle("hidden");
   body.classList.toggle("overflow");
   openDiv.classList.toggle("hidden");
   closeDiv.classList.toggle("hidden");
-});
+}
 
-overDiv.addEventListener("click", function () {
-  burgerDiv.classList.toggle("hidden");
-  overDiv.classList.toggle("hidden");
-  body.classList.toggle("overflow");
-  openDiv.classList.toggle("hidden");
-  closeDiv.classList.toggle("hidden");
-});
+bar.addEventListener("click", closeModal);
+
+overDiv.addEventListener("click", closeModal);
