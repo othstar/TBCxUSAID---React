@@ -23,6 +23,11 @@
   justify-content: space-between;
 }
 
+.slider-container .slider .slider-photo .one-photo {
+  display: flex;
+  justify-content: center;
+}
+
 .slider-container .slider .slider-photo .photo {
   width: 250px;
   max-width: 100%;
