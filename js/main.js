@@ -132,14 +132,14 @@ for (let i = 0; i < dropDown.length; i++) {
   });
 }
 
-////////////////////////////////////////////// header transparent
+////////////////////////////////////////////// Header transparent
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
   header.classList.toggle("header-transparent", window.scrollY > 30);
 });
 
-////////////////////////////////////////////// burger bar
+////////////////////////////////////////////// Burger bar
 const bar = document.querySelector(".burger-bar");
 const burgerDiv = document.querySelector(".burger-div");
 const overDiv = document.querySelector(".overdiv");
@@ -158,3 +158,17 @@ function closeModal() {
 bar.addEventListener("click", closeModal);
 
 overDiv.addEventListener("click", closeModal);
+
+////////////////////////////////////////////// Rules bar
+// const rules = document.querySelector(".rules");
+// const rulesDiv = document.querySelector(".rules-div");
+// const overDivRules = document.querySelector(".overdiv-2");
+// const closeRules = document.querySelector(".closebar-2");
+
+// function closeRules() {
+//   rulesDiv.classList.toggle("hidden");
+//   overDivRules.classList.toggle("hidden");
+// }
+
+// rules.addEventListener("click", closeRules);
+// overDivRules.addEventListener("click", closeRules);
