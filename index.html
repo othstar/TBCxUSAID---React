@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/style/slider.css" />
     <link rel="stylesheet" href="./assets/style/questions.css" />
     <link rel="stylesheet" href="./assets/style/footer.css" />
+    <link rel="stylesheet" href="./assets/style/burgerbar.css" />
     <link rel="stylesheet" href="./assets/style/responsive.css" />
 
     <link
@@ -24,7 +25,7 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="wrapper">
           <div class="logo-container">
@@ -42,13 +43,35 @@
               </li>
             </ul>
           </nav>
+          <div class="burger-bar">
+            <img class="openbar" src="./assets/image/burger-bar.png" />
+            <img
+              class="closebar hidden"
+              src="./assets/image/close-button.png"
+            />
+          </div>
+          <div class="burger-div hidden">
+            <div class="burger-li">
+              <ul>
+                <li><a href="https://www.tbcacademy.ge/">მთავარი</a></li>
+                <li>
+                  <a href="https://www.tbcacademy.ge/it-academy">TBC IT</a>
+                </li>
+                <li class="active"><a href="">TBC x USAID</a></li>
+                <li>
+                  <a href="https://www.tbcacademy.ge/risks-academy">რისკები</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="overdiv hidden"></div>
         </div>
       </div>
     </header>
     <section class="section-1">
       <div class="section-1-header">
-        <h1>TBC x USAID</h1>
-        <h1>ტექნოლოგიური განათლებისთვის</h1>
+        <h1 class="container">TBC x USAID</h1>
+        <h2 class="container">ტექნოლოგიური განათლებისთვის</h2>
       </div>
       <div class="description container">
         <p>

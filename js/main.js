@@ -131,3 +131,34 @@ for (let i = 0; i < dropDown.length; i++) {
     }
   });
 }
+
+////////////////////////////////////////////// header transparent
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  header.classList.toggle("header-transparent", window.scrollY > 30);
+});
+
+////////////////////////////////////////////// burger bar
+const bar = document.querySelector(".burger-bar");
+const burgerDiv = document.querySelector(".burger-div");
+const overDiv = document.querySelector(".overdiv");
+const body = document.querySelector("body");
+const openDiv = document.querySelector(".openbar");
+const closeDiv = document.querySelector(".closebar");
+
+bar.addEventListener("click", function () {
+  burgerDiv.classList.toggle("hidden");
+  overDiv.classList.toggle("hidden");
+  body.classList.toggle("overflow");
+  openDiv.classList.toggle("hidden");
+  closeDiv.classList.toggle("hidden");
+});
+
+overDiv.addEventListener("click", function () {
+  burgerDiv.classList.toggle("hidden");
+  overDiv.classList.toggle("hidden");
+  body.classList.toggle("overflow");
+  openDiv.classList.toggle("hidden");
+  closeDiv.classList.toggle("hidden");
+});

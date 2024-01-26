@@ -1,0 +1,48 @@
+.burger-bar {
+  display: none;
+  color: white;
+  z-index: 100;
+}
+
+.burger-bar .openbar {
+  width: 40px;
+}
+.burger-bar .closebar {
+  width: 20px;
+}
+
+.burger-div {
+  width: calc(100% - 40%);
+  height: 100vh;
+  background-color: var(--bg-overlay-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.burger-li {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  padding: 0 1rem;
+}
+.burger-li ul li a {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.overdiv {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(26, 30, 31, 0.9);
+  z-index: 90;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

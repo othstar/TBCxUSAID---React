@@ -1,9 +1,109 @@
-/* @media only screen and (min-width: 1000px) {
-  header {
-    max-width: 100%;
+@media only screen and (max-width: 1300px) {
+  .right-arrow,
+  .left-arrow {
+    display: none;
+  }
+  .photos {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider-container .slider {
+    height: 400px;
+  }
+  .photo {
+    width: 100px;
+    margin-bottom: 30px;
   }
 }
-@media only screen and (min-width: 1500px) {
-  .section-1 .section-1-header {
+@media only screen and (max-width: 1025px) {
+  .burger-bar {
+    display: block;
   }
-} */
+  .list-container {
+    display: none;
+  }
+  .section-1 h1,
+  .section-1 h2 {
+    font-size: 32px;
+  }
+  .section-1 .description,
+  .section-1 .description a {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-section .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .section-1 h1,
+  .section-1 h2 {
+    font-size: 28px;
+  }
+  .section-1 .description {
+    font-size: 20px;
+    padding: 2rem 0;
+  }
+  .section-1 .description a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .main-section .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-1 h1,
+  .section-1 h2 {
+    font-size: 20px;
+  }
+  .section-1 .description,
+  .section-1 .description a {
+    font-size: 16px;
+  }
+  .main-section .main-header h2 {
+    font-size: 16px;
+  }
+  .main-section .cards-container .card .card-info h3,
+  .main-section .cards-container .card .card-info .details a {
+    font-size: 15px;
+  }
+  .slider-container .slider-header h3 {
+    font-size: 18px;
+  }
+  .questions-section .questions-header h4,
+  .questions-section .questions-header a,
+  .questions-section .questions .question p,
+  .questions-section .questions .question-content p {
+    font-size: 15px;
+  }
+  footer .container .right-container .btn-container a {
+    padding: 0.4rem 1rem;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .section-1 h1,
+  .section-1 h2 {
+    font-size: 16px;
+  }
+  .section-1 .description,
+  .section-1 .description a {
+    font-size: 16px;
+  }
+  .section-1 .section-1-header {
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}

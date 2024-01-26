@@ -4,13 +4,13 @@ body {
   background-color: var(--bg-overlay-color);
 }
 .container {
-  max-width: 100%;
+  max-width: 90%;
   width: 1010px;
   margin: 0 auto;
 }
 
 .min-container {
-  max-width: 100%;
+  max-width: 85%;
   width: 940px;
   margin: 0 auto;
 }
@@ -18,9 +18,11 @@ body {
 .hidden {
   display: none !important;
 }
-
+.overflow {
+  overflow: hidden;
+}
 .active a {
-  color: var(--main-color);
+  color: var(--main-color) !important;
 }
 
 .border-bottom {
