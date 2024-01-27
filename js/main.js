@@ -158,17 +158,3 @@ function closeModal() {
 bar.addEventListener("click", closeModal);
 
 overDiv.addEventListener("click", closeModal);
-
-////////////////////////////////////////////// Rules bar
-// const rules = document.querySelector(".rules");
-// const rulesDiv = document.querySelector(".rules-div");
-// const overDivRules = document.querySelector(".overdiv-2");
-// const closeRules = document.querySelector(".closebar-2");
-
-// function closeRules() {
-//   rulesDiv.classList.toggle("hidden");
-//   overDivRules.classList.toggle("hidden");
-// }
-
-// rules.addEventListener("click", closeRules);
-// overDivRules.addEventListener("click", closeRules);
