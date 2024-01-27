@@ -50,6 +50,7 @@
 .questions-section .questions .question-content {
   color: white;
   font-size: 16px;
+  font-family: var(--secondary-font);
 }
 
 .questions-section .questions .question-content h4 {
