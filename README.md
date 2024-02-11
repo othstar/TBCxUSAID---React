@@ -8,8 +8,6 @@
    │ └── ...
    │
    ├── js/
-   │ ├── main.js
-   │ └── mockData.js
    │
    └── index.html
 
