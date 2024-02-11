@@ -1,17 +1,17 @@
 ////////////////////// Project Structure //////////////////////
 
 └── TBCxUSAID---React/
-├── assets/
-│ ├── image/
-│ │ └── ...
-│ └── style/
-│ └── ...
-│
-├── js/
-│ ├── main.js
-│ └── mockData.js
-│
-└── index.html
+   ├── assets/
+   │ ├── image/
+   │ │ └── ...
+   │ └── style/
+   │ └── ...
+   │
+   ├── js/
+   │ ├── main.js
+   │ └── mockData.js
+   │
+   └── index.html
 
 ////////////////////// Technologies used //////////////////////
 
