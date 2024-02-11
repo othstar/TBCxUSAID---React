@@ -45,7 +45,7 @@ const courses = [
 
 // Questions
 
-const FAQ = [
+const faq = [
   {
     question: "როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?",
     answer: `<h4>კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:</h4>
@@ -102,13 +102,13 @@ const FAQ = [
 //This is for FAQ questions and answers
 const questionsParentElement = document.querySelector(".questions");
 
-for (j = 0; j < FAQ.length; j++) {
+for (j = 0; j < faq.length; j++) {
   questionsParentElement.innerHTML += `<div class="question border-bottom">
-                                        <p>${FAQ[j].question}</p>
+                                        <p>${faq[j].question}</p>
                                         <img src="./assets/image/dropdown.png" alt="dropdown" />
                                         </div>
                                         <div class="question-content hidden">
-                                        ${FAQ[j].answer}
+                                        ${faq[j].answer}
                                       </div>`;
 }
 
