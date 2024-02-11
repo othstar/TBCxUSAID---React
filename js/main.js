@@ -26,7 +26,7 @@ for (u = 0; u < courses.length; u++) {
                                     <span>რეგისტრაცია დასრულებულია</span>
                                     <div class="details">
                                       <img src="./assets/image/right-arrow.png" alt="right-arrow" />
-                                      <a href="https://www.tbcacademy.ge/usaid/ios-development"
+                                      <a href="#"
                                         >კურსის დეტალები</a
                                       >
                                     </div>
