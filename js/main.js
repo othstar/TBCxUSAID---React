@@ -3,7 +3,7 @@
 //This is for FAQ questions and answers
 const questionsParentElement = document.querySelector(".questions");
 
-for (j = 0; j < FAQ.length; j++) {
+for (let j = 0; j < FAQ.length; j++) {
   questionsParentElement.innerHTML += `<div class="question border-bottom">
                                         <p>${FAQ[j].question}</p>
                                         <img src="./assets/image/dropdown.png" alt="dropdown" />
